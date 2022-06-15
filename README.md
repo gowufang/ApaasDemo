@@ -6,7 +6,7 @@
 
 ![Untitled](README/Untitled.png)
 
-复制源码到工程根目录
+复制源码到工程根目录（AgoraEduCore目前需要使用远程依赖）
 
 ![Untitled](README/Untitled%201.png)
 
