@@ -4,23 +4,23 @@
 
 改成30
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled.png)
+![Untitled](README/Untitled.png)
 
 复制源码到工程根目录
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%201.png)
+![Untitled](README/Untitled%201.png)
 
 拷贝完后
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%202.png)
+![Untitled](README/Untitled%202.png)
 
 ## gradle.properties
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%203.png)
+![Untitled](README/Untitled%203.png)
 
 ## project的build.gradle
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%204.png)
+![Untitled](README/Untitled%204.png)
 
 ```
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
@@ -64,7 +64,7 @@ delete rootProject.buildDir
 
 ## app的build.gradle
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%205.png)
+![Untitled](README/Untitled%205.png)
 
 ```
 implementation project(path: ':AgoraClassSDK')
@@ -87,13 +87,13 @@ rootProject.name = "项目名字"
 include ':app'
 ```
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%206.png)
+![Untitled](README/Untitled%206.png)
 
 ## config.gradle放进来
 
 ## 注释`id 'com.github.dcendents.android-maven'`
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%207.png)
+![Untitled](README/Untitled%207.png)
 
 然后可以编译成功
 
@@ -105,11 +105,11 @@ include ':app'
 
 …/AgoraEduUIKit/src/main/java/com/agora/edu/component/chat/AgoraEduEaseChatWidget.kt: (73, 56): Unresolved reference: ease_chat_layout
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%208.png)
+![Untitled](README/Untitled%208.png)
 
 修改如下：（如果有类似的报错，改成对应的全路径）
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%209.png)
+![Untitled](README/Untitled%209.png)
 
 或者改头文件 R.文件
 
@@ -121,7 +121,7 @@ include ':app'
 
 如下：
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2010.png)
+![Untitled](README/Untitled%2010.png)
 
 ****android studio编程时出现的错误：Cannot get property 'XXXX' on extra properties extension as it does not exist****
 
@@ -146,15 +146,15 @@ I'v solve this by deleting one line in `build.gradle:`
 apply plugin: 'com.github.dcendents.android-maven'
 ```
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2011.png)
+![Untitled](README/Untitled%2011.png)
 
 错误
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2012.png)
+![Untitled](README/Untitled%2012.png)
 
 …AgoraClassSDK/src/main/java/io/agora/classroom/ui/goup/AgoraClassSmallGroupingActivity.kt: (40, 54): Unresolved reference: fcr_group_enter_group
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2013.png)
+![Untitled](README/Untitled%2013.png)
 
 An exception occurred applying plugin request [id: 'com.android.application']
 
@@ -162,13 +162,13 @@ An exception occurred applying plugin request [id: 'com.android.application']
 Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8.
 > 
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2014.png)
+![Untitled](README/Untitled%2014.png)
 
 One or more issues found when checking AAR metadata values:
 
 Dependency 'androidx.core:core-ktx:1.7.0' requires 'compileSdkVersion' to be set to 31 or higher.
 Compilation target for module ':app' is 'android-30'
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2015.png)
+![Untitled](README/Untitled%2015.png)
 
-![Untitled](%E6%BA%90%E7%A0%81%E9%9B%86%E6%88%90%E6%AD%A5%E9%AA%A4%20838a095a94b541f8a024899cbf934c84/Untitled%2016.png)
+![Untitled](README/Untitled%2016.png)
