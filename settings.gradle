@@ -1,0 +1,9 @@
+include ':AgoraClassSDK'
+//if (!readyPublishGithub.toBoolean()) {
+//    include ':AgoraEduCore'
+//}
+include ':AgoraEduUIKit'
+include ':app'
+include ':hyphenate'
+rootProject.name = "ApaasDemo"
+include ':app'
